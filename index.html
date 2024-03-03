@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sikriti Chakraborty</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .slideshow-container {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .mySlides {
+            display: none;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        .social-media {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .about-section {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .about-section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>SIKRITI CHAKRABORTY</h1>
+    </header>
+
+    
+    <div class="social-media">
+        <!-- Replace "#" with actual social media links -->
+        <a href="https://www.facebook.com/profile.php?id=100071790880578" target="_blank">Facebook</a> ||
+        <a href="https://www.instagram.com/sikriti_suku/" target="_blank">Instagram</a>
+    </div>
+
+    <div class="about-section">
+        <h2>Click on the above link to follow me !</h2>
+        <h2>Sikriti Chakraborty</h2>
+        <h2>Nurse at APOLLO REACH NSR HOSPITAL</h2>
+        <p>Warangal, Telangana - 506006 </p>
+        <!-- Add more content about Sikriti -->
+    </div>
+
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="dp.jpg" alt="Sikriti's Display Picture">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="sl.jpg" alt="Sikriti's Photo 1">
+        </div>
+        <div class="mySlides fade">
+            <img src="sl1.jpg" alt="Sikriti's Photo 2">
+        </div>
+        <div class="mySlides fade">
+            <img src="slb.jpg" alt="Sikriti's Photo 2">
+        </div>
+        <div class="mySlides fade">
+            <img src="sl2.jpg" alt="Sikriti's Photo 2">
+        </div>
+        <!-- Add more slides as needed -->
+
+        <!-- Navigation dots -->
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <!-- Add more dots for each slide -->
+        </div>
+    </div>
+
+    <script>
+        // JavaScript for the slideshow
+        let slideIndex = 0;
+
+        function showSlides() {
+            let i;
+            const slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 2000); // Change slide every 2 seconds
+        }
+
+        showSlides();
+    </script>
+
+</body>
+</html>
